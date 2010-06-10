@@ -1,0 +1,25 @@
+body {
+  font-family: Georgia, serif;
+  background-image:url("/images/backgrounds/stripe_dark_blue.png");
+}
+
+a {color: blue;}
+
+
+input[type="submit"] {
+ background: #b00;
+ color: white; 
+ padding: 4px 6px;
+ -webkit-box-shadow: 2px 2px 4px #888;
+ -moz-box-shadow: #888 2px 2px 4px;
+ -webkit-border-radius: 12px;
+ -moz-border-radius: 12px;
+ border: 1px solid #800;
+ font-weight: bold;
+ font-size: 14px;
+ cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #c00;
+}
