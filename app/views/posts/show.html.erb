@@ -1,0 +1,25 @@
+<%-
+# app/views/posts/new.html.erb
+-%>
+<%= render :partial => 'post' %>
+<% unless @post.comments.blank? %>
+  <h2>Comments</h2>
+  <% @post.comments.each do |comment| %>
+    By <strong><%= comment.author %></strong> on <%= comment.created_at %>:<br />
+    <%= comment.body %>
+    <hr />
+  <% end %>
+<% end %>
+<h2>Add a comment</h2>
+<% form_for @comment do |comment_form| %>
+  <%= hidden_field_tag :post_id, @post.id %>
+  <p>
+    <strong>Author:</strong>
+    <%= comment_form.text_field :author %>
+  </p>
+  <p>
+    <strong>Body:</strong><br />
+    <%= comment_form.text_area :body%>
+  </p>
+  <%= comment_form.submit 'Post Comment'%>
+<% end%>

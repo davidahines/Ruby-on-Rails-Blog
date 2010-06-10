@@ -1,0 +1,10 @@
+<%-
+# app/views/posts/new.html.erb
+-%>
+
+<h2>Write a new blog post</h2>
+<%-
+# Writes displays a form element for the new post
+-%>
+<%= error_messages_for 'post'%>
+<%= render :partial => 'form' %>

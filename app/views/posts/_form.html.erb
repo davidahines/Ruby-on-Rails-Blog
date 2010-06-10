@@ -1,0 +1,16 @@
+
+<% form_for @post do |post_form| %>
+  <p>
+    <strong>Title:</strong><br />
+    <%= post_form.text_field :title %>
+  </p>
+  <p>
+    <strong>Author:</strong><br />
+    <%= post_form.text_field :author %>
+  </p>
+  <p>
+    <strong>Body:</strong><br />
+    <%= post_form.text_area :body %>
+  </p>
+  <%= post_form.submit 'Save post' %>
+<% end%>
