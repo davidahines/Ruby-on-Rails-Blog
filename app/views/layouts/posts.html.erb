@@ -7,9 +7,7 @@
 
 <html lang="en">
   <head>
-
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>untitled</title>
     <meta name="generator" content="TextMate http://macromates.com/">
     <meta name="author" content="David Hines">
     <!-- Date: 2010-06-10 -->
@@ -17,12 +15,26 @@
     <link rel="stylesheet" href="/stylesheets/application.css" type="text/css" />
   </head>
   <body>
-    <h1>My Blog</h1>
-    <% if flash[:notice] %>
-      <div style='background-color: #c0c0c0'>
-        <%= flash[:notice] %>
-      </div>
-    <% end %>
-    <%= yield %>
+
+    <table id='content' class='center'>
+      <tr>
+        <!-- NAVBAR -->
+      </tr>
+      <tr>
+        <% if flash[:notice] %>
+          <div id='error'>
+            <%= flash[:notice] %>
+          </div>
+        <% end %>
+      </tr>
+      <tr>
+        <td>
+          <%= yield %>
+        </td>
+        <td>
+          <!-- Sidebar! -->
+        </td>
+      </tr>
+    </table>
   </body>
 </html>

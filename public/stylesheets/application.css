@@ -5,7 +5,13 @@ body {
 
 a {color: blue;}
 
-
+#content {
+  background-color: white;
+  padding:25px 50px 25px 50px; 
+}
+#error{
+  background-color: #c0c0c0;
+}
 input[type="submit"] {
  background: #b00;
  color: white; 
@@ -22,4 +28,9 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background: #c00;
+}
+.center{
+  margin-left:auto;
+  margin-right:auto;
+  width:70%;
 }
