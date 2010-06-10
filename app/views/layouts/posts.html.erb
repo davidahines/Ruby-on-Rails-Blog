@@ -15,11 +15,7 @@
     <link rel="stylesheet" href="/stylesheets/application.css" type="text/css" />
   </head>
   <body>
-
     <table id='content' class='center'>
-      <tr>
-        <!-- NAVBAR -->
-      </tr>
       <tr>
         <% if flash[:notice] %>
           <div id='error'>
@@ -29,6 +25,7 @@
       </tr>
       <tr>
         <td>
+          <%= render :partial => 'nav_menu' %>
           <%= yield %>
         </td>
         <td>
