@@ -14,7 +14,7 @@
 <% form_for @comment do |comment_form| %>
   <%= hidden_field_tag :post_id, @post.id %>
   <p>
-    <strong>Author:</strong>
+    <strong>Author:</strong><br />
     <%= comment_form.text_field :author %>
   </p>
   <p>
