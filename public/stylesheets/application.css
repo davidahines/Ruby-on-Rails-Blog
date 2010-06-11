@@ -1,54 +1,35 @@
 body {
-  font-family: Georgia, serif;
+  font-family: Gill Sans, sans-serif;
   background-image:url("/images/backgrounds/body.jpg");
-/*  background: #DDD url('/images/backgrounds/body.jpg') repeat/repeat-x/repeat-y/no-repeat scroll/fixed top/center/bottom/x-%/x-pos left/center/right/y-%/y-pos;
-  */
 }
 #content {
-  background-color: darkgrey;
+  background-color: #A9A9A9;
   padding:25px 50px 25px 50px; 
+  width: 800px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: #888 2px 2px 4px;
 }
-a:link {color: LightSlateGray ; text-decoration: none; }
-a:active {color: MediumSlateBlue ; text-decoration: none; }
-a:visited {color: DimGray ; text-decoration: none; }
-a:hover {color: LightGrey  ; text-decoration: underline; }
+a:link {
+  color: #778899 ; text-decoration: none; 
+}
+a:active {
+  color: #7B68EE ; text-decoration: none; 
+}
+a:visited {
+  color: #696969; text-decoration: none; 
+}
+a:hover {
+  color: #D3D3D3  ; text-decoration: underline; 
+}
 #error{
   background-color: #c0c0c0;
 }
-#inputArea {
-  font-family: Arial, Sans-Serif;
-  font-size: 13px;
-  background-color: #d6e5f4;
-  padding: 10px;
-}
-#inputArea input[type="text"], #inputArea textarea {
-  font-family: Arial, Sans-Serif;
-  font-size: 13px;
-  margin-bottom: 5px;
-  display: block;
-  padding: 4px;
-  border: solid 1px #85b1de;
-  width: 300px;
-}
-input[type="submit"] {
- background: #b00;
- color: white; 
- padding: 4px 6px;
- -webkit-box-shadow: 2px 2px 4px #888;
- -moz-box-shadow: #888 2px 2px 4px;
- -webkit-border-radius: 12px;
- -moz-border-radius: 12px;
- border: 1px solid #800;
- font-weight: bold;
- font-size: 14px;
- cursor: pointer;
-}
 
-input[type="submit"]:hover {
-  background: #c00;
-}
 .center{
   margin-left:auto;
   margin-right:auto;
   width:70%;
+}
+img {
+  border: 0;
 }

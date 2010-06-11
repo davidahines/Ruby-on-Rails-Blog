@@ -1,28 +1,31 @@
-#nav_menu ul
+ul.nav_menu
 {
  list-style:none; 
+ list-style-type: none; 
  padding: 0;
  margin: 0;
 }
-#nav_menu li
-{
-  float: left;
-  margin: 0 0.15em;
-}
-#nav_menu li a
+.nav_menu ul { list-style-type: none; }
+.nav_menu li{float: left; margin: 0 1em;}
+.nav_menu li :hover {background: DarkSlateGray;color: #D3D3D3  ; text-decoration: underline; }
+.nav_menu li a
 {
   background-image: url("/images/backgrounds/body.jpg");
   float: left;
   color: white; 
   display: block;
-  border: 1px solid #800;
+  border: 1px solid #D3D3D3;
   color: grey;
   text-decoration: none;
   text-align:center;
   padding: 4px 6px;
   -webkit-box-shadow: 2px 2px 4px #888;
   -moz-box-shadow: #888 2px 2px 4px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
   font-weight: bold;
   font-size: 14px;
   cursor: pointer;
+  width: 100px;
 }
+

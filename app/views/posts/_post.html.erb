@@ -2,7 +2,7 @@
 # app/views/posts/_post.html.erb
 # This is the post partial, it shows the values of a post.
 -%>
-<h2><%= link_to_unless_current post.title, post %></h2>
+<h2><%= link_to_unless_current post.title, post %> <%= link_to image_tag( '/images/icons/report_edit.png'), edit_post_path(post) %></h2>
 Posted at: <%= post.created_at %> by <strong><%= post.author %></strong><br />
-<%= post.body%>
+<%= post.body%>  
 <hr />

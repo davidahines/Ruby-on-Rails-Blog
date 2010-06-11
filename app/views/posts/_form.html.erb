@@ -3,12 +3,13 @@
 # Displays the form for creating or editing a post.
 -%>
 <% form_for @post do |post_form| %>
+  <div input>
   <p>
-    <strong>Title:</strong><br />
+    <strong>Title:</strong>
     <%= post_form.text_field :title %>
   </p>
   <p>
-    <strong>Author:</strong><br />
+    <strong>Author:</strong>
     <%= post_form.text_field :author %>
   </p>
   <p>
@@ -16,4 +17,5 @@
     <%= post_form.text_area :body %>
   </p>
   <%= post_form.submit 'Save post' %>
+  </div>
 <% end%>
