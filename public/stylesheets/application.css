@@ -8,6 +8,8 @@ body {
   width: 800px;
   -webkit-box-shadow: 2px 2px 4px #888;
   -moz-box-shadow: #888 2px 2px 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
 }
 a:link {
   color: #778899 ; text-decoration: none; 

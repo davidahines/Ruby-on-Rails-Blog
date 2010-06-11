@@ -1,30 +1,4 @@
-#post_title {
- background-color: #D3D3D3;
- -webkit-box-shadow: 2px 2px 4px #888;
- -moz-box-shadow: #888 2px 2px 4px;
- width: 200px;
-}
-#post_author {
- background-color: #D3D3D3;
- -webkit-box-shadow: 2px 2px 4px #888;
- -moz-box-shadow: #888 2px 2px 4px;
- width: 200px;
-}
-.inputArea {
-  font-family: Arial, Sans-Serif;
-  font-size: 13px;
-  background-color: #d6e5f4;
-  padding: 10px;
-}
-.inputArea input[type="text"], .inputArea textarea {
-  font-family: Arial, Sans-Serif;
-  font-size: 13px;
-  margin-bottom: 5px;
-  display: block;
-  padding: 4px;
-  border: solid 1px #85b1de;
-  width: 300px;
-}
+/*Submitbuttons*/
 input[type="submit"] {
  background-image: url("/images/backgrounds/body.jpg");
  color: grey; 
@@ -42,9 +16,36 @@ input[type="submit"]:hover {
   background: DarkSlateGray;
   color: white;
 }
+/*Textfields*/
+input{
+ background-color: #D3D3D3;
+ -webkit-box-shadow: 2px 2px 4px #888;
+ -moz-box-shadow: #888 2px 2px 4px;
+ width: 200px;
+ -webkit-border-radius: 4px;
+ -moz-border-radius: 4px;
+}
+
 textarea{
   background-color: #D3D3D3;
   -webkit-box-shadow: 2px 2px 4px #888;
   -moz-box-shadow: #888 2px 2px 4px;
   width: 400px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+.inputArea {
+  font-family: Arial, Sans-Serif;
+  font-size: 13px;
+  background-color: #d6e5f4;
+  padding: 10px;
+}
+.inputArea input[type="text"], .inputArea textarea {
+  font-family: Arial, Sans-Serif;
+  font-size: 13px;
+  margin-bottom: 5px;
+  display: block;
+  padding: 4px;
+  border: solid 1px #85b1de;
+  width: 300px;
 }

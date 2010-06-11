@@ -15,6 +15,9 @@
   <p>
     <strong>Body:</strong><br />
     <%= post_form.text_area :body %>
+    <script type="text/javascript" charset="utf-8">
+      CKEDITOR.replace('post_body');
+    </script>
   </p>
   <%= post_form.submit 'Save post' %>
   </div>
