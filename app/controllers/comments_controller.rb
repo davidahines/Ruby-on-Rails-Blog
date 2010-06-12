@@ -11,4 +11,7 @@ class CommentsController < ApplicationController
     end
     redirect_to @post
   end
+  def destroy
+    
+  end
 end

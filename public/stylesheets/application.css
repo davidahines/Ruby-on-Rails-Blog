@@ -24,7 +24,13 @@ a:hover {
   color: #D3D3D3  ; text-decoration: underline; 
 }
 #error{
-  background-color: #c0c0c0;
+  background-color: #D3D3D3;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: #888 2px 2px 4px;
+  width: 200px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  padding: 2px;
 }
 
 .center{

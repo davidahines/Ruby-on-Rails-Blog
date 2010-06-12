@@ -22,14 +22,16 @@
   <body>
     <table id='content' class='center'>
       <tr>
-        <% if flash[:notice] %>
-          <div id='error'>
-            <%= flash[:notice] %>
-          </div>
-        <% end %>
+       <td><%= render :partial => 'nav_menu' %></td>
       </tr>
       <tr>
-       <td><%= render :partial => 'nav_menu' %></td>
+        <td>
+          <% if flash[:notice] %>
+          <div id='error' class = 'center'>
+            <%= flash[:notice] %>
+          </div>
+          <% end %>
+        </td>
       </tr>
       <tr>
        <td><%= yield %></td>
