@@ -1,10 +1,13 @@
 body {
-  font-family: Gill Sans, sans-serif;
-  background-image:url("/images/backgrounds/body.jpg");
+  /*font-family: Gill Sans, sans-serif;*/
+  font:13px Arial,Tahoma,Helvetica,FreeSans,sans-serif;
+/*  background-image:url("/images/backgrounds/body.jpg");*/
+  background-color: #141414;
 }
 #content {
   background-color: #A9A9A9;
-  padding:25px 50px 25px 50px; 
+  padding:2px 4px; 
+/*  padding:4px 50px 20px 50px; */
   width: 800px;
   -webkit-box-shadow: 2px 2px 4px #888;
   -moz-box-shadow: #888 2px 2px 4px;
@@ -40,4 +43,16 @@ a:hover {
 }
 img {
   border: 0;
+}
+.blogSection{
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  background-color:#141414;
+  border:1px solid #222222;
+  font-size:120%;
+  margin-top:1em;
+  padding:15px;
+  color: #FFF;
+  margin:1em 0;
+  overflow:hidden;
 }

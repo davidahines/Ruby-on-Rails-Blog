@@ -2,24 +2,14 @@
 #/app/views/posts/_comments.html.erb
 # Displays the form for adding a comment
 -%>
+<div class="blogSection">
 <% unless @post.comments.blank? %>
   <h2>Comments</h2>
   <% @post.comments.each do |comment| %>
     By <strong><%= comment.author %></strong> on <%= comment.created_at %>:<br />
-    <%= comment.body %>
-    <hr />
+    <%= comment.body %><br />
+    <br />
   <% end %>
 <% end %>
-<h2>Add a comment</h2>
-<% form_for @comment do |comment_form| %>
-  <%= hidden_field_tag :post_id, @post.id %>
-  <p>
-    <strong>Author:</strong><br />
-    <%= comment_form.text_field :author %>
-  </p>
-  <p>
-    <strong>Body:</strong><br />
-    <%= comment_form.text_area :body%>
-  </p>
-  <%= comment_form.submit 'Post Comment'%>
-<% end%>
+</div>
+<%= render :partial => 'comments_form' %>
