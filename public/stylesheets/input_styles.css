@@ -1,19 +1,19 @@
 /*Submitbuttons*/
 input[type="submit"] {
- background-image: url("/images/backgrounds/body.jpg");
- color: grey; 
- padding: 4px 6px;
- -webkit-box-shadow: 2px 2px 4px #888;
- -moz-box-shadow: #888 2px 2px 4px;
- -webkit-border-radius: 12px;
- -moz-border-radius: 12px;
- border: 1px solid #D3D3D3;
- font-weight: bold;
- font-size: 14px;
- cursor: pointer;
+  background-color:#A9A9A9;
+  color: #141414; 
+  padding: 4px 6px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: #888 2px 2px 4px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border: 1px solid #D3D3D3;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
 }
 input[type="submit"]:hover {
-  background: DarkSlateGray;
+  background: #2F4F4F;
   color: white;
 }
 /*Textfields*/

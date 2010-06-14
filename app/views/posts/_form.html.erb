@@ -2,8 +2,9 @@
 #/app/views/posts/_form.html.erb
 # Displays the form for creating or editing a post.
 -%>
+
 <% form_for @post do |post_form| %>
-  <div input>
+  <div class="blogSection">
   <p>
     <strong>Title:</strong><br />
     <%= post_form.text_field :title %>
