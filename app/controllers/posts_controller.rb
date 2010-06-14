@@ -32,4 +32,10 @@ class PostsController < ApplicationController
       render :action => 'edit'
     end
   end
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+    flash[:notice] = 'Your post was deleted successfully.'
+    redirect_to(posts_path)
+  end
 end

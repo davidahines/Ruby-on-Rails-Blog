@@ -6,7 +6,8 @@
 <% unless @post.comments.blank? %>
   <h2>Comments</h2>
   <% @post.comments.each do |comment| %>
-    By <strong><%= comment.author %></strong> on <%= comment.created_at %>:<br />
+    By <strong><%= comment.author %></strong> on <%= comment.created_at %>: 
+    <%= link_to image_tag( '/images/icons/report_delete.png'),comment, :confirm => 'Are you sure you want to delete this comment?', :method => :delete %><br />
     <%= comment.body %><br />
     <br />
   <% end %>

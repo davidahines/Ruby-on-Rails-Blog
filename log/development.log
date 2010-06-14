@@ -4750,3 +4750,848 @@ Rendered posts/_comments_form (5.3ms)
 Rendered posts/_comments (82.9ms)
 Rendered posts/_nav_menu (0.5ms)
 Completed in 118ms (View: 97, DB: 3) | 200 OK [http://localhost/posts/8]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-06-14 12:27:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPost Columns (18.7ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;36;1mComment Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering template within layouts/posts
+Rendering posts/show
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:7)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:74)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:155)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:12)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:12)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:13)
+Rendered posts/_post (307.2ms)
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+Rendered posts/_comments_form (6.7ms)
+Rendered posts/_comments (21.3ms)
+Rendered posts/_nav_menu (1.7ms)
+Completed in 562ms (View: 489, DB: 21) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#backgrounds to png (for 127.0.0.1 at 2010-06-14 12:27:27) [GET]
+  Parameters: {"id"=>"gradient_black"}
+
+ActionController::UnknownAction (No action responded to backgrounds. Actions: create, destroy, edit, index, new, show, and update):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-14 12:27:31) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (10.9ms)
+Rendered posts/_post (5.0ms)
+Rendered posts/_post (4.9ms)
+Rendered posts/_post (4.7ms)
+Rendered posts/_post (4.7ms)
+Rendered posts/_post (4.9ms)
+Rendered posts/_post (5.1ms)
+Rendered posts/_post (4.7ms)
+Rendered posts/_form (22.0ms)
+Rendered posts/_nav_menu (0.6ms)
+Completed in 128ms (View: 114, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-14 12:27:49) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (7.3ms)
+Rendered posts/_post (5.0ms)
+Rendered posts/_post (4.7ms)
+Rendered posts/_post (5.2ms)
+Rendered posts/_post (4.8ms)
+Rendered posts/_post (4.7ms)
+Rendered posts/_post (4.7ms)
+Rendered posts/_post (5.0ms)
+Rendered posts/_form (4.5ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 66ms (View: 52, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-14 12:27:53) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (7.9ms)
+Rendered posts/_post (5.0ms)
+Rendered posts/_post (4.8ms)
+Rendered posts/_post (4.7ms)
+Rendered posts/_post (4.7ms)
+Rendered posts/_post (4.7ms)
+Rendered posts/_post (4.7ms)
+Rendered posts/_post (4.7ms)
+Rendered posts/_form (84.3ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 145ms (View: 131, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-14 12:29:04) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (22.3ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (10.7ms)
+Rendered posts/_post (5.4ms)
+Rendered posts/_post (7.0ms)
+Rendered posts/_post (5.2ms)
+Rendered posts/_post (6.2ms)
+Rendered posts/_post (5.4ms)
+Rendered posts/_post (5.5ms)
+Rendered posts/_post (6.2ms)
+Rendered posts/_form (4.6ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 107ms (View: 71, DB: 23) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-06-14 12:29:07) [GET]
+  Parameters: {"id"=>"destroy"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (117.6ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=destroy):
+  app/controllers/posts_controller.rb:20:in `show'
+
+Rendered rescues/_trace (72.8ms)
+Rendered rescues/_request_and_response (21.1ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-06-14 12:30:06) [GET]
+  Parameters: {"id"=>"destroy"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 0) [0m
+
+ActiveRecord::RecordNotFound (Couldn't find Post with ID=destroy):
+  app/controllers/posts_controller.rb:20:in `show'
+
+Rendered rescues/_trace (146.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-14 12:30:12) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (10.1ms)
+Rendered posts/_post (5.4ms)
+Rendered posts/_post (4.9ms)
+Rendered posts/_post (4.8ms)
+Rendered posts/_post (5.0ms)
+Rendered posts/_post (5.1ms)
+Rendered posts/_post (4.9ms)
+Rendered posts/_post (5.3ms)
+Rendered posts/_form (4.6ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 75ms (View: 61, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-06-14 12:30:17) [GET]
+  Parameters: {"method"=>"delete", "id"=>"8"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 8) [0m
+  [4;36;1mComment Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering template within layouts/posts
+Rendering posts/show
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:7)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:74)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:155)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:10)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:12)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:12)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:13)
+Rendered posts/_post (14.2ms)
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 8) [0m
+Rendered posts/_comments_form (5.2ms)
+Rendered posts/_comments (11.4ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 52ms (View: 30, DB: 5) | 200 OK [http://localhost/posts/8?method=delete]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-06-14 12:30:43) [GET]
+  Parameters: {"method"=>"delete", "id"=>"8"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 8) [0m
+  [4;36;1mComment Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering template within layouts/posts
+Rendering posts/show
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:7)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:74)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:155)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:10)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:12)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:12)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:13)
+Rendered posts/_post (16.1ms)
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 8) [0m
+Rendered posts/_comments_form (6.1ms)
+Rendered posts/_comments (13.1ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 139ms (View: 41, DB: 3) | 200 OK [http://localhost/posts/8?method=delete]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-14 12:30:48) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (10.2ms)
+Rendered posts/_post (5.7ms)
+Rendered posts/_post (5.1ms)
+Rendered posts/_post (5.0ms)
+Rendered posts/_post (5.8ms)
+Rendered posts/_post (5.1ms)
+Rendered posts/_post (5.0ms)
+Rendered posts/_post (6.0ms)
+Rendered posts/_form (4.6ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 74ms (View: 59, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-06-14 12:30:51) [GET]
+  Parameters: {"method"=>"destroy", "id"=>"8"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 8) [0m
+  [4;36;1mComment Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering template within layouts/posts
+Rendering posts/show
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:7)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:74)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:155)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:10)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:12)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:12)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:13)
+Rendered posts/_post (12.1ms)
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 8) [0m
+Rendered posts/_comments_form (5.1ms)
+Rendered posts/_comments (11.5ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 48ms (View: 27, DB: 3) | 200 OK [http://localhost/posts/8?method=destroy]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-06-14 12:31:09) [GET]
+  Parameters: {"method"=>"destroy", "id"=>"8"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 8) [0m
+  [4;36;1mComment Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering template within layouts/posts
+Rendering posts/show
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:7)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:74)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:155)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:10)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:12)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:12)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:13)
+Rendered posts/_post (87.8ms)
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 8) [0m
+Rendered posts/_comments_form (5.2ms)
+Rendered posts/_comments (11.5ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 131ms (View: 109, DB: 3) | 200 OK [http://localhost/posts/8?method=destroy]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-06-14 12:31:17) [GET]
+  Parameters: {"method"=>"destroy", "id"=>"8"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 8) [0m
+  [4;36;1mComment Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering template within layouts/posts
+Rendering posts/show
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:7)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:74)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:155)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:10)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:12)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:12)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:13)
+Rendered posts/_post (12.0ms)
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 8) [0m
+Rendered posts/_comments_form (5.2ms)
+Rendered posts/_comments (11.4ms)
+Rendered posts/_nav_menu (0.6ms)
+Completed in 48ms (View: 27, DB: 3) | 200 OK [http://localhost/posts/8?method=destroy]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-06-14 12:31:20) [GET]
+  Parameters: {"method"=>"delete", "id"=>"8"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 8) [0m
+  [4;36;1mComment Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering template within layouts/posts
+Rendering posts/show
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:7)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:74)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:155)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:10)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:12)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:12)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:13)
+Rendered posts/_post (13.8ms)
+  [4;35;1mComment Load (0.4ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 8) [0m
+Rendered posts/_comments_form (5.1ms)
+Rendered posts/_comments (11.4ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 52ms (View: 29, DB: 3) | 200 OK [http://localhost/posts/8?method=delete]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-06-14 12:32:46) [GET]
+  Parameters: {"method"=>"delete", "id"=>"8"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 8) [0m
+  [4;36;1mComment Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering template within layouts/posts
+Rendering posts/show
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:7)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:74)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:155)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:10)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:74)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:155)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:14)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:14)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:15)
+Rendered posts/_post (22.7ms)
+  [4;35;1mComment Load (1.0ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 8) [0m
+Rendered posts/_comments_form (4.6ms)
+Rendered posts/_comments (11.6ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 66ms (View: 43, DB: 4) | 200 OK [http://localhost/posts/8?method=delete]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2010-06-14 12:32:50) [DELETE]
+  Parameters: {"authenticity_token"=>"gTTTGBR/vZ1KfjEyP/g7M6a3MHihnTMcwUqJGwnh49M=", "id"=>"8"}
+  [4;36;1mPost Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 8) [0m
+  [4;36;1mSQL (48.8ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Destroy (73.1ms)[0m   [0mDELETE FROM `posts` WHERE `id` = 8[0m
+  [4;36;1mSQL (35.4ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed in 176ms (DB: 160) | 302 Found [http://localhost/posts/8]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-14 12:32:50) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (15.4ms)
+Rendered posts/_post (9.9ms)
+Rendered posts/_post (9.9ms)
+Rendered posts/_post (9.9ms)
+Rendered posts/_post (9.8ms)
+Rendered posts/_post (10.3ms)
+Rendered posts/_post (10.1ms)
+Rendered posts/_form (4.0ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 99ms (View: 84, DB: 2) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-14 12:33:52) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (14.9ms)
+Rendered posts/_post (9.7ms)
+Rendered posts/_post (9.6ms)
+Rendered posts/_post (11.1ms)
+Rendered posts/_post (10.0ms)
+Rendered posts/_post (10.1ms)
+Rendered posts/_post (9.7ms)
+Rendered posts/_form (4.0ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 104ms (View: 90, DB: 2) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2010-06-14 12:33:56) [DELETE]
+  Parameters: {"authenticity_token"=>"gTTTGBR/vZ1KfjEyP/g7M6a3MHihnTMcwUqJGwnh49M=", "id"=>"7"}
+  [4;35;1mPost Columns (6.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 7) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Destroy (0.2ms)[0m   [0;1mDELETE FROM `posts` WHERE `id` = 7[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed in 107ms (DB: 7) | 302 Found [http://localhost/posts/7]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-14 12:33:57) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (14.4ms)
+Rendered posts/_post (10.5ms)
+Rendered posts/_post (9.6ms)
+Rendered posts/_post (9.7ms)
+Rendered posts/_post (9.6ms)
+Rendered posts/_post (9.7ms)
+Rendered posts/_form (4.0ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 89ms (View: 72, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2010-06-14 12:34:07) [DELETE]
+  Parameters: {"authenticity_token"=>"gTTTGBR/vZ1KfjEyP/g7M6a3MHihnTMcwUqJGwnh49M=", "id"=>"6"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.8ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 6) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mPost Destroy (0.2ms)[0m   [0mDELETE FROM `posts` WHERE `id` = 6[0m
+  [4;36;1mSQL (73.5ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed in 91ms (DB: 76) | 302 Found [http://localhost/posts/6]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-14 12:34:07) [GET]
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (14.6ms)
+Rendered posts/_post (10.1ms)
+Rendered posts/_post (9.9ms)
+Rendered posts/_post (10.3ms)
+Rendered posts/_post (9.8ms)
+Rendered posts/_form (4.7ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 82ms (View: 64, DB: 2) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#destroy (for 127.0.0.1 at 2010-06-14 12:34:16) [DELETE]
+  Parameters: {"authenticity_token"=>"gTTTGBR/vZ1KfjEyP/g7M6a3MHihnTMcwUqJGwnh49M=", "id"=>"5"}
+  [4;35;1mPost Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (3.0ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 5) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Destroy (0.2ms)[0m   [0;1mDELETE FROM `posts` WHERE `id` = 5[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/posts
+Completed in 22ms (DB: 6) | 302 Found [http://localhost/posts/5]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-14 12:34:16) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (13.3ms)
+Rendered posts/_post (9.5ms)
+Rendered posts/_post (10.0ms)
+Rendered posts/_post (90.1ms)
+Rendered posts/_form (4.0ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 146ms (View: 131, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-14 12:34:20) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (13.2ms)
+Rendered posts/_post (9.5ms)
+Rendered posts/_post (9.9ms)
+Rendered posts/_post (9.5ms)
+Rendered posts/_form (3.9ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 64ms (View: 50, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-14 12:34:22) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (13.2ms)
+Rendered posts/_post (10.2ms)
+Rendered posts/_post (9.8ms)
+Rendered posts/_post (9.5ms)
+Rendered posts/_form (4.0ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 65ms (View: 52, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-14 12:34:26) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (13.0ms)
+Rendered posts/_post (9.8ms)
+Rendered posts/_post (10.0ms)
+Rendered posts/_post (9.6ms)
+Rendered posts/_form (3.9ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 65ms (View: 51, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-14 12:34:42) [GET]
+  [4;36;1mPost Load (21.6ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (13.2ms)
+Rendered posts/_post (9.6ms)
+Rendered posts/_post (10.2ms)
+Rendered posts/_post (9.3ms)
+Rendered posts/_form (3.9ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 86ms (View: 50, DB: 23) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-14 12:35:07) [GET]
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (13.8ms)
+Rendered posts/_post (9.7ms)
+Rendered posts/_post (10.2ms)
+Rendered posts/_post (10.5ms)
+Rendered posts/_form (5.0ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 74ms (View: 60, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-14 12:35:16) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (13.2ms)
+Rendered posts/_post (9.5ms)
+Rendered posts/_post (9.4ms)
+Rendered posts/_post (9.5ms)
+Rendered posts/_form (3.5ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 64ms (View: 50, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-14 12:39:51) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (37.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (14.9ms)
+Rendered posts/_post (9.4ms)
+Rendered posts/_post (9.8ms)
+Rendered posts/_post (10.4ms)
+Rendered posts/_form (68.5ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 261ms (View: 210, DB: 38) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-06-14 12:39:58) [GET]
+  Parameters: {"id"=>"4"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;36;1mComment Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+Rendering template within layouts/posts
+Rendering posts/show
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:7)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:74)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:155)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:74)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:155)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:12)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:12)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:13)
+Rendered posts/_post (53.2ms)
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 4) [0m
+Rendered posts/_comments_form (4.1ms)
+Rendered posts/_comments (22.6ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 108ms (View: 87, DB: 3) | 200 OK [http://localhost/posts/4]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#destroy (for 127.0.0.1 at 2010-06-14 12:40:02) [DELETE]
+  Parameters: {"authenticity_token"=>"gTTTGBR/vZ1KfjEyP/g7M6a3MHihnTMcwUqJGwnh49M=", "id"=>"1"}
+  [4;36;1mComment Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mComment Load (0.7ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.`id` = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mComment Destroy (64.8ms)[0m   [0mDELETE FROM `comments` WHERE `id` = 1[0m
+  [4;36;1mSQL (38.7ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+Redirected to http://localhost:3000/posts/4
+Completed in 167ms (DB: 107) | 302 Found [http://localhost/comments/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2010-06-14 12:40:02) [GET]
+  Parameters: {"id"=>"4"}
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.2ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 4) [0m
+  [4;35;1mComment Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendering template within layouts/posts
+Rendering posts/show
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:7)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:74)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:155)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:74)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:92)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from polymorphic_url at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:99)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:155)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_named_route_call at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/polymorphic_routes.rb:170)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from model_name_from_record_or_class at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/record_identifier.rb:101)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from extract_options! at /usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.5/lib/active_support/core_ext/array/extract_options.rb:15)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from build_expiry at /usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:340)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from generated code (/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.5/lib/action_controller/routing/route.rb:160)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:12)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:12)
+DEPRECATION WARNING: @post will no longer be implicitly assigned to post. (called from _run_erb_app47views47posts47_post46html46erb_locals_object_post at /Users/davidhines/Rails/railsblog/app/views/posts/_post.html.erb:13)
+Rendered posts/_post (20.1ms)
+  [4;36;1mComment Load (0.4ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 4) [0m
+Rendered posts/_comments_form (4.1ms)
+Rendered posts/_comments (16.6ms)
+Rendered posts/_nav_menu (0.5ms)
+Completed in 66ms (View: 41, DB: 4) | 200 OK [http://localhost/posts/4]
