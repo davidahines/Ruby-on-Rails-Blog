@@ -83,7 +83,7 @@ a:active {color: #7B68EE ; text-decoration: none;}
 a:visited {color: #696969; text-decoration: none;}
 a:hover {color: #D3D3D3  ; text-decoration: underline;}
 h3{color:#585858;font-size:19px;font-weight:normal;}
-h1{color:#000;font-size:5em;font-weight:800;font-family:"Impact",Charcoal,sans-serif;text-align:center}
+h1{color:#000;font-size:5em;font-weight:800;font-family:"Impact",Charcoal,sans-serif;text-align:center; margin:0px; padding 0px}
 
 .sideSection{
   background: #FFF;
@@ -101,4 +101,7 @@ h1{color:#000;font-size:5em;font-weight:800;font-family:"Impact",Charcoal,sans-s
 
   padding: 4px;
   margin: 4px;
+}
+.no_margin{
+  margin: 0px;
 }
