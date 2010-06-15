@@ -7390,3 +7390,279 @@ ActionController::RoutingError (No route matches "/public/stylesheets/tray.css" 
   
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (118.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (332.8ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreatePosts (20100609175405)
+Migrating to AddAuthorToPost (20100609184508)
+Migrating to CreateComments (20100610153840)
+Migrating to CreateUsers (20100615035814)
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1187.8ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `login` varchar(40), `name` varchar(100) DEFAULT '', `email` varchar(100), `crypted_password` varchar(40), `salt` varchar(40), `created_at` datetime, `updated_at` datetime, `remember_token` varchar(40), `remember_token_expires_at` datetime) ENGINE=InnoDB[0m
+  [4;36;1mSQL (500.9ms)[0m   [0;1mCREATE UNIQUE INDEX `index_users_on_login` ON `users` (`login`)[0m
+  [4;35;1mSQL (47.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100615035814')[0m
+  [4;36;1mSQL (14.0ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (43.6ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-15 10:31:58) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (290.5ms)
+Rendered posts/_post (9.8ms)
+Rendered posts/_post (9.7ms)
+Rendered posts/_post (10.5ms)
+Rendered posts/_post (10.2ms)
+Rendered posts/_form (6.1ms)
+Rendered posts/_sidebar (1.3ms)
+Rendered posts/_footer (0.6ms)
+Completed in 494ms (View: 446, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 10:31:59) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/tray.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-15 10:32:17) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (14.8ms)
+Rendered posts/_post (9.6ms)
+Rendered posts/_post (10.1ms)
+Rendered posts/_post (10.1ms)
+Rendered posts/_post (9.6ms)
+Rendered posts/_form (4.7ms)
+Rendered posts/_sidebar (1.3ms)
+Rendered posts/_footer (0.2ms)
+Completed in 91ms (View: 72, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 10:32:17) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/tray.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-15 10:33:07) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (20.3ms)
+Rendered posts/_post (12.7ms)
+Rendered posts/_post (10.1ms)
+Rendered posts/_post (9.6ms)
+Rendered posts/_post (10.0ms)
+Rendered posts/_form (4.0ms)
+Rendered posts/_sidebar (1.1ms)
+Rendered posts/_footer (0.1ms)
+Completed in 107ms (View: 89, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 10:33:08) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/tray.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-15 10:33:58) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (13.8ms)
+Rendered posts/_post (9.6ms)
+Rendered posts/_post (11.2ms)
+Rendered posts/_post (9.8ms)
+Rendered posts/_post (9.7ms)
+Rendered posts/_form (4.1ms)
+Rendered posts/_sidebar (1.3ms)
+Rendered posts/_footer (0.1ms)
+Completed in 89ms (View: 71, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 10:33:58) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/tray.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-15 10:34:37) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (15.5ms)
+Rendered posts/_post (11.0ms)
+Rendered posts/_post (9.7ms)
+Rendered posts/_post (10.0ms)
+Rendered posts/_post (9.6ms)
+Rendered posts/_form (4.0ms)
+Rendered posts/_sidebar (1.3ms)
+Rendered posts/_footer (0.1ms)
+Completed in 87ms (View: 72, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 10:34:37) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/tray.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-15 10:35:02) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (3.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (13.6ms)
+Rendered posts/_post (9.7ms)
+Rendered posts/_post (9.4ms)
+Rendered posts/_post (9.4ms)
+Rendered posts/_post (9.7ms)
+Rendered posts/_form (4.0ms)
+Rendered posts/_sidebar (0.1ms)
+Rendered posts/_footer (0.1ms)
+Completed in 78ms (View: 60, DB: 4) | 200 OK [http://localhost/]
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 10:35:02) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/tray.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-15 10:35:14) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (14.5ms)
+Rendered posts/_post (9.8ms)
+Rendered posts/_post (10.0ms)
+Rendered posts/_post (9.7ms)
+Rendered posts/_post (9.7ms)
+Rendered posts/_form (4.1ms)
+Rendered posts/_sidebar (0.1ms)
+Rendered posts/_footer (0.1ms)
+Completed in 77ms (View: 63, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 10:35:14) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/tray.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-15 10:35:41) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (13.6ms)
+Rendered posts/_post (9.6ms)
+Rendered posts/_post (9.5ms)
+Rendered posts/_post (9.7ms)
+Rendered posts/_post (9.8ms)
+Rendered posts/_form (4.1ms)
+Rendered posts/_sidebar (0.2ms)
+Rendered posts/_footer (0.1ms)
+Completed in 76ms (View: 61, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 10:35:42) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/tray.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2010-06-15 10:35:47) [GET]
+  [4;36;1mPost Load (0.4ms)[0m   [0;1mSELECT * FROM `posts` ORDER BY created_at DESC[0m
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/index
+Rendered posts/_post (14.1ms)
+Rendered posts/_post (10.0ms)
+Rendered posts/_post (9.7ms)
+Rendered posts/_post (9.7ms)
+Rendered posts/_post (9.9ms)
+Rendered posts/_form (4.2ms)
+Rendered posts/_sidebar (0.2ms)
+Rendered posts/_footer (0.1ms)
+Completed in 161ms (View: 146, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-06-15 10:35:47) [GET]
+
+ActionController::RoutingError (No route matches "/public/stylesheets/tray.css" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
