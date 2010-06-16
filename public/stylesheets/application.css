@@ -197,6 +197,8 @@ p#bio  {
   background-position: bottom left;
   height: 115px;
   width: 355px;
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
 }
 #session{
   width: 230px;
