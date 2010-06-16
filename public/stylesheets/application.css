@@ -191,9 +191,7 @@ p#bio  {
 }
 #facebookBadge{
   background-image:url('http://badge.facebook.com/badge/533330455.827.1826763779.png');
-  background-position: bottom;
-  height: 140px;
-  width: 388px;
-  background-size: 388px;  
-  -moz-background-size: 388px;
+  background-position: bottom left;
+  height: 100px;
+  width: 355px;
 }
