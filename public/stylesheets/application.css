@@ -70,6 +70,9 @@ h1#main_title{
   font-weight:bold;
   background-position: bottom;
 }
+h1#main_title a{
+  color:#FFF;
+}
 h2 {
   background-image:url('/images/backgrounds/gradient.jpeg');
   background-repeat:repeat-x;
@@ -205,4 +208,21 @@ p#bio  {
 }
 .comment_body{
   padding: 20px;
+}
+.button_link {
+  background-image:url('/images/backgrounds/gradient.jpeg');
+  background-repeat:repeat-x;
+  background-position: bottom;
+  color: #eee;
+  padding: 2px 4px 2px 4px;
+  -webkit-box-shadow: 2px 2px 4px #888;
+  -moz-box-shadow: #888 2px 2px 4px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+
+  border: 1px solid #D3D3D3;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 4px 4px 4px 4px;
 }
