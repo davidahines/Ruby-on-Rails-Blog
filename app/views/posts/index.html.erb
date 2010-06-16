@@ -2,7 +2,8 @@
 #/app/views/posts/index.html.erb
 # Displays all the posts in the collection.
 -%>
-
-
 <%= render :partial => 'post', :collection => @posts %>
-<%= render :partial => 'form' %>
+<div class='blogSection'>
+  <h2>New Post</h2>
+  <%= render :partial => 'form' %>
+</div>
