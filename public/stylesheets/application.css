@@ -181,7 +181,7 @@ h3 {
 }
 
 #twitter_update_list{
-  padding:25px;
+  padding:4px 4px 4px 30px;
   margin: 0px;
   list-style-image:url("/images/icons/Twitter-icon.png");
 }
@@ -192,7 +192,7 @@ p#bio  {
 #facebookBadge{
   background-image:url('http://badge.facebook.com/badge/533330455.827.1826763779.png');
   background-position: bottom left;
-  height: 110px;
+  height: 115px;
   width: 355px;
 }
 #session{
@@ -202,4 +202,7 @@ p#bio  {
 }
 #remember_me{
   width:20px;
+}
+.comment_body{
+  padding: 20px;
 }

@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-  
+  before_filter :login_required, :except => %w[ index show create ]
   def create
     @post = Post.find(params[:post_id])
     @comment = Comment.new(params[:comment])
