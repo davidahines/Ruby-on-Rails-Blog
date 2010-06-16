@@ -4,6 +4,8 @@
 -%>
 <div class="blogSection">
   <h2>
+    <a href="http://davidahines.heroku.com" class="button"><img src="/images/icons/bullet_toggle_minus.png" border="0" class='button'> </a>
+    
     <%= link_to_unless_current post.title, post %>
     <%- if logged_in? %>
     <span class='postControls'>

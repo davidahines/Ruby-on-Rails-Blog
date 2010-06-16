@@ -28,6 +28,7 @@ input{
  width: 200px;
  -webkit-border-radius: 4px;
  -moz-border-radius: 4px;
+ margin: 4px 0px 4px 0px;
 }
 
 textarea{

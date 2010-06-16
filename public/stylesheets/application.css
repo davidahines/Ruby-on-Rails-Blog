@@ -228,3 +228,7 @@ p#bio  {
   cursor: pointer;
   margin: 4px 4px 4px 4px;
 }
+.button{
+  margin:5px 0px 0px 0px;
+  padding:0px;
+}
