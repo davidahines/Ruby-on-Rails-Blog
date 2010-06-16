@@ -20,8 +20,9 @@
         <h1 id='main_title'>DAVID HINES</h1>
       </div>
       <% if flash[:notice] %>
-        <div id='error' class='blogSection'>
-          <%= flash[:notice] %>
+        <div id='errorSection' class='blogSection'>
+          <h3>Notice</h3>
+          <div id='error'><%= flash[:notice] %></div>
         </div>
       <% end %>
       <div id='content-both'>

@@ -3,7 +3,9 @@
 # Displays all the posts in the collection.
 -%>
 <%= render :partial => 'post', :collection => @posts %>
+<%- if logged_in? %>
 <div class='blogSection'>
   <h2>New Post</h2>
   <%= render :partial => 'form' %>
 </div>
+<%- end %>

@@ -1,5 +1,6 @@
 #app/controllers/posts_controller.rb
 class PostsController < ApplicationController
+  before_filter :login_required, :except => %w[ index show ]
   def index
     @posts = Post.find(:all, :order => 'created_at DESC')
     @post = Post.new(params[:post])

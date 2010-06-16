@@ -1,0 +1,23 @@
+<%-
+#app/views/layouts/posts.html.erb
+-%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="generator" content="TextMate http://macromates.com/">
+    <meta name="author" content="David Hines">
+    <title>David Hines</title>
+    <link rel="stylesheet" href="/stylesheets/application.css" type="text/css" />
+    <link rel="stylesheet" href="/stylesheets/nav_sheet.css" type="text/css"/>
+    <link rel="stylesheet" href="/stylesheets/input_styles.css" type="text/css"/>
+    <link rel="stylesheet" href="../../../public/stylesheets/tray.css" type="text/css"/>
+  </head>
+  <body>
+    <div class='blogSection' id='session'>
+      <%=yield%>
+    </div>
+
+  </body>
+</html>
