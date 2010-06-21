@@ -7,11 +7,11 @@ a:active {
   text-decoration: none;
 }
 a:visited {
-  color: #eee; 
+  color: #009; 
   text-decoration: none;
 }
 a:hover {
-  color: #D3D3D3; 
+  color: #00E; 
   text-decoration: underline;
 }
 h2 a:link {
