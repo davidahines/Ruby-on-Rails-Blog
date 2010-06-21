@@ -2,23 +2,25 @@
 # app/views/posts/_post.html.erb
 # This is the post partial, it shows the values of a post.
 -%>
-<div class="blogSection">
+<div class="blogSection" >
   <h2>
-    <a href="http://davidahines.heroku.com" class="button"><img src="/images/icons/bullet_toggle_minus.png" border="0" class='button'> </a>
+    <a href="javascript:void(0)" class="button" onclick="$('post_<%= post.id %>').toggle()"><img src="/images/icons/bullet_toggle_minus.png" border="0" class='button'> </a>
     
     <%= link_to_unless_current post.title, post %>
     <%- if logged_in? %>
-    <span class='postControls'>
+    <div class='postControls'>
       <%= link_to image_tag('/images/icons/report_edit.png'), edit_post_path(post) %>
       <%= link_to image_tag('/images/icons/report_add.png'), new_post_path %>
       <%= link_to image_tag('/images/icons/report_delete.png'),post, :confirm => 'Are you sure you want to delete this post?', :method => :delete %>
-    </span>
+    </div>
     <%-end%>
         
   </h2>
+  <div id='post_<%= post.id %>'>
   <p>
     Posted at: <%= post.created_at %> by <strong><%= post.author %></strong><br />
     <%= post.body%><br />
     <!-- <span class='button_link'><%= link_to "Back", :controller => :posts %></span> -->
   </p>
+  </div>
 </div>

@@ -6,7 +6,7 @@
     <p>
       <strong>Title:</strong><br />
       <%= post_form.text_field :title %><br />
-      <%= post_form.hidden_field :author %>
+      <%= post_form.hidden_field :author, :value => current_user.name %>
       <strong>Body:</strong><br />
       <%= post_form.text_area :body %>
       <%- if logged_in? %>

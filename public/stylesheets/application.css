@@ -132,9 +132,11 @@ h3 {
   padding:8px;
 }
 .postControls{
-  align: right;
+  float: right;
 }
-
+.blogControls{
+  float: right;
+}
 #wrap{
   margin-left:auto;
   margin-right:auto;

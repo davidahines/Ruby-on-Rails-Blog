@@ -1,6 +1,6 @@
 class AddAuthorToPost < ActiveRecord::Migration
   def self.up
-    add_column :posts, :author, :string, :default => 'Anonymous'
+    add_column :posts, :author, :string, :default => 'David A. Hines'
   end
 
   def self.down

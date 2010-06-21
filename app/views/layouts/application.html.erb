@@ -12,16 +12,22 @@
     <link rel="stylesheet" href="/stylesheets/application.css" type="text/css" />
     <link rel="stylesheet" href="/stylesheets/nav_sheet.css" type="text/css"/>
     <link rel="stylesheet" href="/stylesheets/input_styles.css" type="text/css"/>
-    <link rel="stylesheet" href="../../../public/stylesheets/tray.css" type="text/css"/>
+    <link rel="stylesheet" href="/stylesheets/tray.css" type="text/css"/>
+    <script src="/javascripts/prototype.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../../public/javascripts/effects.js" type="text/javascript" charset="utf-8"></script>
   </head>
   <body>
     <div id='wrap'>
       <div id='content-top'>
-        <h1 id='main_title'><%= link_to "DAVID HINES", :controller => :posts %></h1>
+        <h1 id='main_title'><%= link_to "DAVID HINES", :controller => :posts %> 
+          <div class="blogControls">
+            <a href="javascript:void(0)" id="hideContent" onclick="$$('div.blogSection', 'div.sideSection').invoke('hide'); $('showContent').show(); $('hideContent').hide();"><img src="/images/icons/bullet_toggle_minus.png" border="0" class='button' > </a>
+            <a href="javascript:void(0)" id="showContent" onclick="$$('div.blogSection', 'div.sideSection').invoke('show'); $('showContent').hide(); $('hideContent').show();"class='button'style="display:none"><img src="/images/icons/bullet_toggle_plus.png" border="0" > </a>
+          </div></h1>
       </div>
       <% if flash[:notice] %>
         <div id='errorSection' class='blogSection'>
-          <h3>Notice</h3>
+          <h3><a href='javascript:void(0)' onclick="$('errorSection').hide()"> <img src="/images/icons/cancel.png"></a>Notice</h3>
           <div id='error'><%= flash[:notice] %></div>
         </div>
       <% end %>
@@ -30,7 +36,7 @@
           <%= yield %>
         </div>
         <div id='content-right'>
-          <%= render :partial => 'sidebar' %>
+          <%= render :partial => 'app/views/layouts/sidebar.html.erb' %>
         </div>
       </div>
       <div id='content-bottom'>

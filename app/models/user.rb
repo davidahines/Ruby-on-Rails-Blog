@@ -1,6 +1,9 @@
 require 'digest/sha1'
 
 class User < ActiveRecord::Base
+  has_many :client_applications
+  has_many :tokens, :class_name=>"OauthToken", :order=>"authorized_at desc",:include=>[:client_application]
+  
   include Authentication
   include Authentication::ByPassword
   include Authentication::ByCookieToken
@@ -49,6 +52,5 @@ class User < ActiveRecord::Base
 
   protected
     
-
-
+  
 end
