@@ -1,15 +1,26 @@
 <div id='aboutDiv'class="sideSection">
-  <h3>About Me <a href="javascript:void(0)" id="showContent" onclick="$$('#aboutDiv')fade()"class='button'><img src="/images/icons/bullet_toggle_plus.png" border="0"> </a> </h3>
+  <h3>
+    <%= toggle_button("bio", "hide", "show")%>
+    About Me
+  </h3>
   <p id='bio'>
     I'm an amateur artist, a hobbyist game designer, a Computer Science student at Cape Breton University
     and a developer with Marcato Digital.
   </p>
 </div>
 <div class="sideSection">
-    <h3><a href="http://www.facebook.com/people/David-A-Hines/533330455">Friend me on facebook</a></h3>
-    <div id='facebookBadge'></div>
+    <h3>
+      <%= toggle_button("facebook_badge", "hide", "show")%>
+      <a href="http://www.facebook.com/people/David-A-Hines/533330455">Friend me on facebook</a>
+    </h3>
+    <div id='facebook_badge'></div>
 </div>
 <div class="sideSection">
-    <h3><a href="http://www.twitter.com/davidahines">Follow me on twitter</a></h3>
-    <ul id="twitter_update_list"><li>&nbsp;</li><li>&nbsp;</li></ul>
+    <h3>
+      <%= toggle_button("twitter_update_div", "hide", "show")%>
+      <a href="http://www.twitter.com/davidahines">Follow me on twitter</a>
+    </h3>
+    <div id='twitter_update_div'>
+      <ul id="twitter_update_list"><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li></ul>
+    </div>
 </div>

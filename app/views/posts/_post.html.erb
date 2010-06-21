@@ -4,8 +4,7 @@
 -%>
 <div class="blogSection" >
   <h2>
-    <a href="javascript:void(0)" class="button" onclick="$('post_<%= post.id %>').toggle()"><img src="/images/icons/bullet_toggle_minus.png" border="0" class='button'> </a>
-    
+    <%= toggle_button("post_#{post.id}", "hide", "show")%>
     <%= link_to_unless_current post.title, post %>
     <%- if logged_in? %>
     <div class='postControls'>

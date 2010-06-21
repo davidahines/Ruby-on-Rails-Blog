@@ -14,16 +14,12 @@
     <link rel="stylesheet" href="/stylesheets/input_styles.css" type="text/css"/>
     <link rel="stylesheet" href="/stylesheets/tray.css" type="text/css"/>
     <script src="/javascripts/prototype.js" type="text/javascript" charset="utf-8"></script>
-    <script src="../../../public/javascripts/effects.js" type="text/javascript" charset="utf-8"></script>
+    <script src="public/javascripts/effects.js" type="text/javascript" charset="utf-8"></script>
   </head>
   <body>
     <div id='wrap'>
       <div id='content-top'>
-        <h1 id='main_title'><%= link_to "DAVID HINES", :controller => :posts %> 
-          <div class="blogControls">
-            <a href="javascript:void(0)" id="hideContent" onclick="$$('div.blogSection', 'div.sideSection').invoke('hide'); $('showContent').show(); $('hideContent').hide();"><img src="/images/icons/bullet_toggle_minus.png" border="0" class='button' > </a>
-            <a href="javascript:void(0)" id="showContent" onclick="$$('div.blogSection', 'div.sideSection').invoke('show'); $('showContent').hide(); $('hideContent').show();"class='button'style="display:none"><img src="/images/icons/bullet_toggle_plus.png" border="0" > </a>
-          </div></h1>
+        <h1 id='main_title'><%= link_to "DAVID HINES", :controller => :posts %></h1>
       </div>
       <% if flash[:notice] %>
         <div id='errorSection' class='blogSection'>

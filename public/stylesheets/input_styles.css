@@ -54,3 +54,9 @@ textarea{
   border: solid 1px #85b1de;
   width: 300px;
 }
+.show{
+  float:left;
+}
+.hide{
+  float:left;
+}

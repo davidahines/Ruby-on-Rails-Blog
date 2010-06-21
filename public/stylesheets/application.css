@@ -194,7 +194,7 @@ p#bio  {
   padding: 8px ;
   font-weight: bold;
 }
-#facebookBadge{
+#facebook_badge{
   background-image:url('http://badge.facebook.com/badge/533330455.827.1826763779.png');
   background-position: bottom left;
   height: 115px;

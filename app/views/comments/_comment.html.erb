@@ -1,6 +1,6 @@
 <div class="blogSection">
   <h2>
-    <a href="javascript:void(0)" class="button" onclick="$('comment_<%= comment.id %>').toggle()"><%= image_tag( '/images/icons/bullet_toggle_minus.png') %></a>
+    <%= toggle_button("comment_#{comment.id}", "hide", "show")%>
     Comment
     <%- if logged_in? %>
       <div class='postControls'>
