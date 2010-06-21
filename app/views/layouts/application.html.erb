@@ -36,11 +36,11 @@
           <%= yield %>
         </div>
         <div id='content-right'>
-          <%= render :partial => 'app/views/layouts/sidebar.html.erb' %>
+          <%= render :partial => 'shared/sidebar' %>
         </div>
       </div>
       <div id='content-bottom'>
-          <%= render :partial => 'footer' %>
+          <%= render :partial => 'shared/footer' %>
       </div>
     </div>
     <%- if logged_in? %>

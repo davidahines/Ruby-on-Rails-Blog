@@ -1,0 +1,10 @@
+<%-
+#/app/views/posts/_comments.html.erb
+# Displays the form for adding a comment
+-%>
+
+<% unless @post.comments.blank? %>  
+  <%= render :partial => "comments/comment", :collection => @post.comments %>
+<% end %>
+
+<%= render :partial => 'comments/form' %>
