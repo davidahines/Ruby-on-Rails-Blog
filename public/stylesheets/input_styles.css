@@ -55,8 +55,8 @@ textarea{
   width: 300px;
 }
 .show{
-  float:left;
+  float:right;
 }
 .hide{
-  float:left;
+  float:right;
 }
